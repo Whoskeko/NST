@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/src/assets/fonts/montserratRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  } to {
+    transform: rotate(360deg);
+  }
+}
+
+.img {
+  width: 50px;
+  height: 50px;
+  animation: spin 0.1s linear infinite;
+}
